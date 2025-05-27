@@ -4,7 +4,7 @@ import './index.css'
 
 import Homepage from './routes/Homepage.jsx';
 import PostListPage from './routes/PostListPage.jsx';
-import WritePage from './routes/WritePage.jsx';
+import Write from './routes/Write.jsx';
 import LoginPage from './routes/LoginPage.jsx';
 import RegisterPage from './routes/RegisterPage.jsx';
 import SinglePostPage from './routes/SinglePostPage.jsx';
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/write",
-        element: <WritePage />,
+        element: <Write />,
       },
       {
         path: "/login",
