@@ -27,7 +27,7 @@ const postSchema = new mongoose.Schema({
         required: true,
     },
     isFeatured: {
-        type: Boolean,
+        type: Number,
         default: false,
     },
     visit: {
