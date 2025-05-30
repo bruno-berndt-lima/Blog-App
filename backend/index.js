@@ -26,15 +26,10 @@ app.get("/test", (req, res) => {
     res.status(200).send("It works!")
 })
 
-app.get("/auth-test", (req, res) => {
-    const auth = req.auth()
-    res.json(auth)
+app.get("/auth-state", (req, res) => {
+    const authState = req.auth()
+    res.json(authState)
 })
-
-// app.get("/auth-state", (req, res) => {
-//     const authState = req.auth()
-//     res.json(authState)
-// })
 
 // app.get("/protect", (req, res) => {
 //     const {userId} = req.auth()
@@ -48,7 +43,6 @@ app.get("/auth-test", (req, res) => {
 // app.get("/protect2", requireAuth(), (req, res) => {
 //     res.status(200).json("content")
 // })
-
 
 app.use("/users", userRouter)
 app.use("/posts", postRouter)

@@ -12,7 +12,7 @@ const commentSchema = new mongoose.Schema({
         ref: "Post", 
         required: true,
     },
-    decription: {
+    description: {
         type: String,
         required: true,
     },
