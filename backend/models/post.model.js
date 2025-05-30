@@ -31,11 +31,11 @@ const postSchema = new mongoose.Schema({
         required: true,
     },
     isFeatured: {
-        type: Number,
+        type: Boolean,
         default: false,
     },
     visit: {
-        type: Boolean,
+        type: Number,
         default: 0,
     }, 
   }, 
