@@ -82,7 +82,7 @@ npm install
 4. Start the development servers
 ```bash
 # Start backend server (from backend directory)
-npm run dev
+node --env-file .env --watch index.js
 
 # Start frontend server (from client directory)
 npm run dev
