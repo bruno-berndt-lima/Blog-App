@@ -33,9 +33,9 @@ const SinglePostPage = () => {
                     </h1>
                     <div className="flex items-center gap-2 text-gray-400 text-sm">
                         <span>Written by</span>
-                        <Link className="text-blue-800">{data.user?.username || 'Anonymous'}</Link>
+                        <Link className="text-blue-800" to={`/posts?author=${data.user?.username || 'Anonymous'}`}>{data.user?.username || 'Anonymous'}</Link>
                         <span>on</span>
-                        <Link className="text-blue-800">{data.category}</Link>
+                        <Link className="text-blue-800" to={`/posts?cat=${data.category}`}>{data.category}</Link>
                         <span>{format(data.createdAt)}</span>
                     </div>
                     <p className="text-gray-500 font-medium">
@@ -47,51 +47,22 @@ const SinglePostPage = () => {
                 </div>}
             </div>
             {/* Content  */}
-            <div className="flex flex-col md:flex-row gap-12">
+            <div className="flex flex-col md:flex-row justify-between gap-12">
                 {/* Text */}
-                <div className="lg:text-lg flex flex-col gap-6 text-justify">
-                    <p className="text-gray-500 font-medium">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta egestas pellentesque. Proin sit amet euismod nisi, vitae luctus tortor. Proin lacinia interdum nisi, a auctor mauris sodales vel. Phasellus odio mauris, elementum quis varius ac, placerat cursus ex. Nulla bibendum bibendum erat. Praesent non magna pharetra, pretium sapien nec, pulvinar lacus. Quisque euismod lorem sit amet tellus lobortis, id sollicitudin erat fringilla.
-                    </p>
-                    <p className="text-gray-500 font-medium">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta egestas pellentesque. Proin sit amet euismod nisi, vitae luctus tortor. Proin lacinia interdum nisi, a auctor mauris sodales vel. Phasellus odio mauris, elementum quis varius ac, placerat cursus ex. Nulla bibendum bibendum erat. Praesent non magna pharetra, pretium sapien nec, pulvinar lacus. Quisque euismod lorem sit amet tellus lobortis, id sollicitudin erat fringilla.
-                    </p>
-                    <p className="text-gray-500 font-medium">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta egestas pellentesque. Proin sit amet euismod nisi, vitae luctus tortor. Proin lacinia interdum nisi, a auctor mauris sodales vel. Phasellus odio mauris, elementum quis varius ac, placerat cursus ex. Nulla bibendum bibendum erat. Praesent non magna pharetra, pretium sapien nec, pulvinar lacus. Quisque euismod lorem sit amet tellus lobortis, id sollicitudin erat fringilla.
-                    </p>
-                    <p className="text-gray-500 font-medium">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta egestas pellentesque. Proin sit amet euismod nisi, vitae luctus tortor. Proin lacinia interdum nisi, a auctor mauris sodales vel. Phasellus odio mauris, elementum quis varius ac, placerat cursus ex. Nulla bibendum bibendum erat. Praesent non magna pharetra, pretium sapien nec, pulvinar lacus. Quisque euismod lorem sit amet tellus lobortis, id sollicitudin erat fringilla.
-                    </p>
-                    <p className="text-gray-500 font-medium">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta egestas pellentesque. Proin sit amet euismod nisi, vitae luctus tortor. Proin lacinia interdum nisi, a auctor mauris sodales vel. Phasellus odio mauris, elementum quis varius ac, placerat cursus ex. Nulla bibendum bibendum erat. Praesent non magna pharetra, pretium sapien nec, pulvinar lacus. Quisque euismod lorem sit amet tellus lobortis, id sollicitudin erat fringilla.
-                    </p>
-                    <p className="text-gray-500 font-medium">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta egestas pellentesque. Proin sit amet euismod nisi, vitae luctus tortor. Proin lacinia interdum nisi, a auctor mauris sodales vel. Phasellus odio mauris, elementum quis varius ac, placerat cursus ex. Nulla bibendum bibendum erat. Praesent non magna pharetra, pretium sapien nec, pulvinar lacus. Quisque euismod lorem sit amet tellus lobortis, id sollicitudin erat fringilla.
-                    </p>
-                    <p className="text-gray-500 font-medium">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta egestas pellentesque. Proin sit amet euismod nisi, vitae luctus tortor. Proin lacinia interdum nisi, a auctor mauris sodales vel. Phasellus odio mauris, elementum quis varius ac, placerat cursus ex. Nulla bibendum bibendum erat. Praesent non magna pharetra, pretium sapien nec, pulvinar lacus. Quisque euismod lorem sit amet tellus lobortis, id sollicitudin erat fringilla.
-                    </p>
-                    <p className="text-gray-500 font-medium">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta egestas pellentesque. Proin sit amet euismod nisi, vitae luctus tortor. Proin lacinia interdum nisi, a auctor mauris sodales vel. Phasellus odio mauris, elementum quis varius ac, placerat cursus ex. Nulla bibendum bibendum erat. Praesent non magna pharetra, pretium sapien nec, pulvinar lacus. Quisque euismod lorem sit amet tellus lobortis, id sollicitudin erat fringilla.
-                    </p>
-                    <p className="text-gray-500 font-medium">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta egestas pellentesque. Proin sit amet euismod nisi, vitae luctus tortor. Proin lacinia interdum nisi, a auctor mauris sodales vel. Phasellus odio mauris, elementum quis varius ac, placerat cursus ex. Nulla bibendum bibendum erat. Praesent non magna pharetra, pretium sapien nec, pulvinar lacus. Quisque euismod lorem sit amet tellus lobortis, id sollicitudin erat fringilla.
-                    </p>
-                    <p className="text-gray-500 font-medium">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta egestas pellentesque. Proin sit amet euismod nisi, vitae luctus tortor. Proin lacinia interdum nisi, a auctor mauris sodales vel. Phasellus odio mauris, elementum quis varius ac, placerat cursus ex. Nulla bibendum bibendum erat. Praesent non magna pharetra, pretium sapien nec, pulvinar lacus. Quisque euismod lorem sit amet tellus lobortis, id sollicitudin erat fringilla.
-                    </p>
+                <div className="lg:text-lg flex-1 flex flex-col gap-6 text-justify">
+                    <div 
+                        className="ql-editor"
+                        dangerouslySetInnerHTML={{ __html: data.content }} 
+                    />
                 </div>
                 {/* Menu */}
-                <div className="px-4 h-max sticky top-8">
+                <div className="md:w-64 px-4 h-max sticky top-8">
                     <h1 className="mb-4 text-sm font-medium">Author</h1>
                     <div className="flex flex-col gap-4">
                         <div className="flex items-center gap-8">
                             {data.img && <Image src={data.user.img} className="w-12 h-12 rounded-full object-cover" w="48" h="48"></Image>}
                             <Link className="text-blue-800">{data.user?.username || 'Anonymous'}</Link>
                         </div>
-                        <p className="text-sm text-gray-500">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris porta egestas pellentesque.
-                        </p>
                         <div className="flex gap-2">
                             <Link>
                                 <Image src="facebook.svg"></Image>

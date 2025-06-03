@@ -71,7 +71,7 @@ const Write = () => {
             <h1 className="text-xl font-light">Create a New Post</h1>
             <form onSubmit={handleSubmit} className="flex flex-col gap-6 flex-1 mb-6">
                 <Upload type="image" setProgress={setProgress} setData={setCover}>
-                    <button className="w-max p-2 shadow-md rounded-xl text-sm text-gray-500 bg-white">
+                    <button type="button" className="w-max p-2 shadow-md rounded-xl text-sm text-gray-500 bg-white">
                         Add a cover image
                     </button>
                 </Upload>
@@ -94,24 +94,22 @@ const Write = () => {
                 </div>
                 <textarea className="p-4 rounded-xl bg-white shadow-md" name="description" id="" placeholder="A Short Description"/>
                 <div className="flex flex-1">
-                    <div className="flex flex-col gap-2 mr-2">
-                        <Upload type="image" setProgress={setProgress} setData={setImg}>
-                            <button className="w-max p-2 shadow-md rounded-xl text-sm text-gray-500 bg-white">
-                                🖼️
-                            </button>
-                        </Upload>
-                        <Upload type="video" setProgress={setProgress} setData={setVideo}>
-                            <button className="w-max p-2 shadow-md rounded-xl text-sm text-gray-500 bg-white">
-                                ▶️
-                            </button>
-                        </Upload>
-                    </div>
                     <ReactQuill 
                         theme="snow" 
                         className="flex-1 rounded-xl bg-white shadow-md" 
                         value={value} 
                         onChange={setValue}
                         readOnly={0 < progress && progress < 100}
+                        modules={{
+                            toolbar: [
+                                [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+                                ['bold', 'italic', 'underline', 'strike'],
+                                [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+                                [{ 'color': [] }, { 'background': [] }],
+                                ['link', 'image', 'video'],
+                                ['clean']
+                            ]
+                        }}
                     />
                 </div>
                 <button 

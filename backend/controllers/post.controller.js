@@ -61,7 +61,7 @@ export const getPosts = async (req, res) => {
     }
 
     const posts = await Post.find(query)
-        .populate("user", "username")
+        .populate("user", "username img")
         .sort(sortObj)
         .limit(limit)
         .skip((page-1) * limit)
