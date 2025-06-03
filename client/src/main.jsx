@@ -8,6 +8,7 @@ import Write from './routes/Write.jsx';
 import LoginPage from './routes/LoginPage.jsx';
 import RegisterPage from './routes/RegisterPage.jsx';
 import SinglePostPage from './routes/SinglePostPage.jsx';
+import AboutPage from './routes/AboutPage.jsx';
 import MainLayout from './layouts/MainLayout.jsx';
 
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: "/register",
         element: <RegisterPage />,
+      },
+      {
+        path: "/about",
+        element: <AboutPage />,
       }
     ]
   }

@@ -24,16 +24,16 @@ const SinglePostPage = () => {
     if (!data) return "Post not found!"
 
     return (
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-8 mt-12">
             {/* Details  */}
-            <div className="flex gap-8">
+            <div className="flex gap-8 ml-4">
                 <div className="lg:w-3/5 flex flex-col gap-8">
                     <h1 className="text-xl md:text-3xl xl:text-4xl 2xl:text-5xl font-semibold">
                         {data.title}    
                     </h1>
                     <div className="flex items-center gap-2 text-gray-400 text-sm">
                         <span>Written by</span>
-                        <Link className="text-blue-800">{data.user?.username || 'Anonymous'}</Link>
+                        <Link to={`/posts?author=${data.user?.username}`} className="text-blue-800">{data.user?.username || 'Anonymous'}</Link>
                         <span>on</span>
                         <Link to={`/posts?cat=${data.category}`} className="text-blue-800">{data.category}</Link>
                         <span>{format(data.createdAt)}</span>

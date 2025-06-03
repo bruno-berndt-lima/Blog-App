@@ -35,7 +35,7 @@ const Homepage = () => {
                             d="M 100, 100 m -75, 0 a 75, 75 0 1, 1 150, 0 a 75, 75 0 1, 1 -150, 0"
                         />  
                         <text>
-                            <textPath href="#circlePath" startOffset="0%">Write your story ⦿</textPath>
+                            <textPath href="#circlePath" startOffset="0%">Create your post ⦿</textPath>
                             <textPath href="#circlePath" startOffset="50%">Share your idea ⦿</textPath>
                         </text>
                     </svg>
