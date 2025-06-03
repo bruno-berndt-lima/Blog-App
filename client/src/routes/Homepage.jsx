@@ -18,7 +18,7 @@ const Homepage = () => {
                 {/* Titles */}
                 <div className="">
                     <h1 className="text-gray-800 text-2xl md:text-5xl lg:text-6xl font-bold">Bytes of Knowledge</h1>
-                    <p className="mt-8 text-md md:text-xl">A collaborative space for tech enthusiasts, learners, storytellers, and teachers — sharing knowledge, one byte at a time.</p>
+                    <p className="mt-8 text-md md:text-xl">A collaborative space for tech enthusiasts, learners, storytellers, and teachers — sharing knowledge.</p>
                 </div>
 
                 {/* Animated button */}

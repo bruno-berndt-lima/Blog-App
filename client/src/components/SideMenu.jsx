@@ -75,7 +75,7 @@ const SideMenu = () => {
                 <Link className="underline cursor-pointer" onClick={() => handleCategoryChange("development")}>Development</Link>
                 <Link className="underline cursor-pointer" onClick={() => handleCategoryChange("databases")}>Databases</Link>
                 <Link className="underline cursor-pointer" onClick={() => handleCategoryChange("seo")}>Search engines</Link>
-                <Link className="underline cursor-pointer" onClick={() => handleCategoryChange("marketing")}>Marketing</Link>
+                <Link className="underline cursor-pointer" onClick={() => handleCategoryChange("algorithms")}>Algorithms</Link>
             </div>
         </div>
     )

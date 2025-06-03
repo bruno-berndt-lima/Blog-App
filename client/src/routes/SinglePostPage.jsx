@@ -33,9 +33,9 @@ const SinglePostPage = () => {
                     </h1>
                     <div className="flex items-center gap-2 text-gray-400 text-sm">
                         <span>Written by</span>
-                        <Link className="text-blue-800" to={`/posts?author=${data.user?.username || 'Anonymous'}`}>{data.user?.username || 'Anonymous'}</Link>
+                        <Link className="text-blue-800">{data.user?.username || 'Anonymous'}</Link>
                         <span>on</span>
-                        <Link className="text-blue-800" to={`/posts?cat=${data.category}`}>{data.category}</Link>
+                        <Link to={`/posts?cat=${data.category}`} className="text-blue-800">{data.category}</Link>
                         <span>{format(data.createdAt)}</span>
                     </div>
                     <p className="text-gray-500 font-medium">
@@ -75,22 +75,12 @@ const SinglePostPage = () => {
                     <PostMenuActions post={data}/>
                     <h1 className="mt-8 mb-4 text-sm font-medium">Categories</h1>
                     <div className="flex flex-col gap-2 text-sm">
-                        <Link className="underline">All</Link>
-                        <Link className="underline" to="/">
-                            Web Design
-                        </Link>
-                        <Link className="underline" to="/">
-                            Development
-                        </Link>
-                        <Link className="underline" to="/">
-                            Databases
-                        </Link>
-                        <Link className="underline" to="/">
-                            Search engine
-                        </Link>
-                        <Link className="underline" to="/">
-                            Marketing
-                        </Link>
+                        <Link to="/posts" className="underline">All</Link>
+                        <Link to="/posts?cat=web-design" className="underline">Web Design</Link>
+                        <Link to="/posts?cat=development" className="underline">Development</Link>
+                        <Link to="/posts?cat=databases" className="underline">Databases</Link>
+                        <Link to="/posts?cat=seo" className="underline">Search engines</Link>
+                        <Link to="/posts?cat=algorithms" className="underline">Algorithms</Link>
                     </div>
                     <h1 className="mt-8 mb-4 text-sm font-medium">Search</h1>
                     <Search/>

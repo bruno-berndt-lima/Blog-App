@@ -89,7 +89,7 @@ const Write = () => {
                         <option value="development">Development</option>
                         <option value="databases">Databases</option>
                         <option value="seo">Search engines</option>
-                        <option value="marketing">Marketing</option>
+                        <option value="algorithms">Algorithms</option>
                     </select>
                 </div>
                 <textarea className="p-4 rounded-xl bg-white shadow-md" name="description" id="" placeholder="A Short Description"/>

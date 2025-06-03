@@ -11,7 +11,7 @@ const MainCategories = () => {
                 <Link to="/posts?cat=development" className="hover:bg-blue-50 rounded-full px-4 py-2">Development</Link>
                 <Link to="/posts?cat=databases" className="hover:bg-blue-50 rounded-full px-4 py-2">Databases</Link>
                 <Link to="/posts?cat=seo" className="hover:bg-blue-50 rounded-full px-4 py-2">Search Engines</Link>
-                <Link to="/posts?cat=marketing" className="hover:bg-blue-50 rounded-full px-4 py-2">Marketing</Link>
+                <Link to="/posts?cat=algorithms" className="hover:bg-blue-50 rounded-full px-4 py-2">Algorithms</Link>
 
             </div>
 
