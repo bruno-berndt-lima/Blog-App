@@ -1,6 +1,6 @@
-# Modern Blog Application
+# Blog App
 
-A full-stack blog application built with React, Node.js, and MongoDB, featuring user authentication, real-time updates, and a modern UI design.
+A modern blog application built with React, Node.js, and MongoDB, featuring user authentication, real-time updates, and a beautiful UI design.
 
 ## 🚀 Features
 
@@ -58,7 +58,7 @@ blog-app/
 1. Clone the repository
 ```bash
 git clone https://github.com/bruno-berndt-lima/Blog-App.git
-cd blog-app
+cd Blog-App
 ```
 
 2. Install dependencies
@@ -103,6 +103,28 @@ VITE_API_URL=http://localhost:5000
 VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
 ```
 
+## 📝 API Documentation
+
+The API documentation is available at `/api-docs` when running the backend server.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 👥 Authors
+
+- Bruno Berndt Lima - Initial work
+
+## 🙏 Acknowledgments
+
+- Clerk for authentication services
+- MongoDB for database services
+- All other open-source contributors 
