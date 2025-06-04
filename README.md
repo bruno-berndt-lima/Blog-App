@@ -92,13 +92,25 @@ npm run dev
 
 ### Backend (.env)
 ```
-MONGODB_URI=your_mongodb_uri
+MONGO=your_mongodb_uri
+
+CLERK_WEBHOOK_SECRET=your_clerk_webhook_secret
+CLERK_PUBLISHABLE_KEY=your_clerk_public_key
 CLERK_SECRET_KEY=your_clerk_secret_key
-PORT=5000
+
+CLIENT_URL=http://localhost:5173
+
+IMAGEKIT_URL_ENDPOINT=your_ik_url_endpoint
+IMAGEKIT_PUBLIC_KEY=your_ik_public_key
+IMAGEKIT_PRIVATE_KEY=your_ik_private_key
+
 ```
 
 ### Frontend (.env)
 ```
-VITE_API_URL=http://localhost:5000
+VITE_API_URL = http://localhost:3000
 VITE_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+
+VITE_IMAGEKIT_URL_ENDPOINT=your_ik_url_endpoint
+VITE_IMAGEKIT_KEY=your_ik_public_key
 ```
