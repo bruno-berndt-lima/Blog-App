@@ -61,7 +61,7 @@ const SinglePostPage = () => {
                     <div className="flex flex-col gap-4">
                         <div className="flex items-center gap-8">
                             {data.img && <Image src={data.user.img} className="w-12 h-12 rounded-full object-cover" w="48" h="48"></Image>}
-                            <Link className="text-blue-800">{data.user?.username || 'Anonymous'}</Link>
+                            <Link to={`/posts?author=${data.user?.username}`} className="text-blue-800">{data.user?.username || 'Anonymous'}</Link>
                         </div>
                         <div className="flex gap-2">
                             <Link>
