@@ -68,7 +68,7 @@ npm install
 
 # Install frontend dependencies
 cd client
-npm install
+npm install --legacy-peer-deps
 
 # Install backend dependencies
 cd ../backend
@@ -77,7 +77,7 @@ npm install
 
 3. Set up environment variables
    - Create `.env` files in both client and backend directories
-   - Add necessary environment variables (see .env.example files)
+   - Add necessary environment variables (see example)
 
 4. Start the development servers
 ```bash
