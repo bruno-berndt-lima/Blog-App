@@ -25,7 +25,6 @@ A modern blog application built with React, Node.js, and MongoDB, featuring user
 - Express.js
 - MongoDB with Mongoose
 - Clerk Authentication
-- Body Parser
 
 ## 📦 Project Structure
 
