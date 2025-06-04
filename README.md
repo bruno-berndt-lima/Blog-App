@@ -32,17 +32,17 @@ A modern blog application built with React, Node.js, and MongoDB, featuring user
 ```
 blog-app/
 ├── client/                 # Frontend React application
-│   ├── public/            # Static files
-│   ├── src/              # Source files
-│   ├── tailwind.config.js # Tailwind configuration
-│   └── vite.config.js    # Vite configuration
+│   ├── public/             # Static files
+│   ├── src/                # Source files
+│   ├── tailwind.config.js  # Tailwind configuration
+│   └── vite.config.js      # Vite configuration
 │
-├── backend/               # Backend Node.js application
-│   ├── controllers/      # Route controllers
-│   ├── middlewares/      # Custom middlewares
-│   ├── models/          # Database models
-│   ├── routes/          # API routes
-│   └── lib/             # Utility functions
+├── backend/                # Backend Node.js application
+│   ├── controllers/        # Route controllers
+│   ├── middlewares/        # Custom middlewares
+│   ├── models/             # Database models
+│   ├── routes/             # API routes
+│   └── lib/                # Utility functions
 ```
 
 ## 🚀 Getting Started
